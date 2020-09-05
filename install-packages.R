@@ -9,8 +9,6 @@ local({r <- getOption("repos")
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-source("https://bioconductor.org/biocLite.R")
-biocLite()
+BiocManager::install()
 
-source("https://bioconductor.org/biocLite.R")
-biocLite(c("Seurat"))
+install.packages("Seurat")
